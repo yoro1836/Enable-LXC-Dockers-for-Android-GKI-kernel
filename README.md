@@ -1,3 +1,29 @@
+
+关于gki-defconfig，建议手动编辑，不要用通用配置。
+要添加的
+CONFIG_SYSVIPC=y
+CONFIG_POSIX_MQUEUE=y
+CONFIG_CGROUP_DEVICE=y
+CONFIG_USER_NS=y
+CONFIG_NETFILTER_XT_TARGET_CHECKSUM=y
+CONFIG_NETFILTER_XT_MATCH_ADDRTYPE=y
+CONFIG_IP6_NF_NAT=y
+CONFIG_IP6_NF_TARGET_MASQUERADE=y
+CONFIG_RFKILL=y
+CONFIG_DEVTMPFS=y
+CONFIG_NULL_TTY=y
+CONFIG_LTO_CLANG_THIN=y
+
+
+要删除的配置，直接找到删
+CONFIG_PID_NS is not set
+CONFIG_LTO_CLANG_FULL=y
+CONFIG_MODULE_SCMVERSION=y
+CONFIG_VT is not set
+
+
+
+
 # GKI Custom
 
 Enable LXC, Docker support for GKI Kernel, everything comes from [Common-Android-Kernel-Tree](https://github.com/lateautumn233/Common-Android-Kernel-Tree)
