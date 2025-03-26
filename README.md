@@ -1,6 +1,7 @@
 
 关于gki-defconfig，建议手动编辑，不要用通用配置。
 要添加的
+
 CONFIG_SYSVIPC=y
 
 CONFIG_POSIX_MQUEUE=y
@@ -25,8 +26,30 @@ CONFIG_NULL_TTY=y
 
 CONFIG_LTO_CLANG_THIN=y
 
+也可参考
+https://github.com/Linux-on-droid/vendor_lindroid
+的lxc配置，结合上面调整，可能还需要添加如下
 
-要删除的配置，直接找到删
+CONFIG_SYSVIPC=y
+
+CONFIG_UTS_NS=y
+
+CONFIG_PID_NS=y
+
+CONFIG_IPC_NS=y
+
+CONFIG_USER_NS=y
+
+CONFIG_NET_NS=y
+
+CONFIG_CGROUP_DEVICE=y
+
+CONFIG_CGROUP_FREEZER=y
+
+
+
+2,要删除的配置，直接找到删
+
 CONFIG_PID_NS is not set
 
 CONFIG_LTO_CLANG_FULL=y
