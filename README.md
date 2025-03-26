@@ -1,6 +1,6 @@
 
-关于gki-defconfig，建议手动编辑，不要用通用配置。
-要添加的
+关于gki-defconfig，建议手动编辑或make menuconfig标准化配置下，不要用通用配置。
+1,要添加的内核配置
 
 CONFIG_SYSVIPC=y
 
@@ -45,6 +45,10 @@ CONFIG_NET_NS=y
 CONFIG_CGROUP_DEVICE=y
 
 CONFIG_CGROUP_FREEZER=y
+
+
+
+
 
 
 
